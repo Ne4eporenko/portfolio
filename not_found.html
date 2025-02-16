@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title data-n-head="true">Nastia Design</title>
+    <meta name="description"
+        content="Портфолио на должность веб-дизайнера, помощника дизайнера, стажер в IT компанию" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Kurale&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_not_found.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <header>
+            <div class="header_menu">
+                <div class="logo"><a href="./index.html"><img src="./images/logo_nastia_design.png"></a></div>
+                <div class="menu">
+                    <a href="./all_works.html">Мои работы</a>
+                    <a href="./about_me.html">Обо мне</a>
+                    <a href="./contacts.html">Связаться</a>
+                </div>
+
+
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="./all_works.html">Мои работы</a></li>
+                            <li><a href="./about_me.html">Обо мне</a></li>
+                            <li><a href="./contacts.html">Связаться</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+        </header>
+        <section class="content">
+            <div id="video_position">
+                <video id="background_video" autoplay muted loop>
+                    <source src="./images/background_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="sign">
+                    <div class="neon-blue" id="title">4<span id="fade">0</span>4</div>
+                    <div class="neon-blue">страница не найдена<br>
+                        <span class="neon-purple" id="trav">Enter</span>
+                        <span class="neon-elov">Show</span>
+                    </div>
+                </div>
+            </div>
+            <a href="./index.html" target="_blank" class="button">На главную</a>
+        </section>
+
+        <footer id="footer_not_found">
+            <div class="footer_block">
+                <div class="footer">
+                    <div class="footer_img"><a href="./index.html"><img src="./images/logo_nastia_design.png"></a></div>
+                    <div class="footer_menu">
+                        <a href="./all_works.html">Мои работы</a>
+                        <a href="./about_me.html">Обо мне</a>
+                        <a href="./contacts.html">Связаться</a>
+                    </div>
+                    <div class="footer_social">
+                        <a href="https://t.me/nastu_shk0"><img src="./images/telegram.png"></a>
+                        <a href="mailto:Ne4eporenko.an@yandex.ru"><img src="./images/email.png"></a>
+                        <a href="https://vk.com/id743987802"><img src="./images/vk.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+
+
+</body>
+
+</html>

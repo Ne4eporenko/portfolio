@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles_page_works.css">
+    <title data-n-head="true">Nastia Design</title>
+    <meta name="description"
+        content="Портфолио на должность веб-дизайнера, помощника дизайнера, стажер в IT компанию" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Kurale&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../style_not_found.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="header_menu">
+                <div class="logo"><a href="../index.html"><img src="../images/logo_nastia_design.png"></a></div>
+                <div class="menu">
+                    <a href="../all_works.html">Мои работы</a>
+                    <a href="../about_me.html">Обо мне</a>
+                    <a href="../contacts.html">Связаться</a>
+                </div>
+
+
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="../all_works.html">Мои работы</a></li>
+                            <li><a href="../about_me.html">Обо мне</a></li>
+                            <li><a href="../contacts.html">Связаться</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+        </header>
+        <main>
+            <div class="button_back">
+                <a href="../all_works.html"><button id="btn_back">Назад</button></a>
+            </div>
+            <div class="about_works">
+                <div class="scrin_about_works scrin_mobile">
+                    <div class="scrin_img"><img src="../images/about_works/arctic_1.png"></div>
+                    <div class="scrin_img"><img src="../images/about_works/arctic_2.png"></div>
+                    <div class="scrin_img"><img src="../images/about_works/arctic_3.png"></div>
+                    <div class="scrin_img"><img src="../images/about_works/arctic_4.png"></div>
+                </div>
+                <div class="about_works_text">
+                    <h1>ARCTIC - мобильное приложение</h1>
+                    <p>Карта достопримечательностей - дизайн для туристической компании. Мобильное приложение, которое позволяло бы по геолокации находить ближайшие достопримечательности и прокладывать к ним маршрут.</p>
+                    <p>В качестве дополнения, приложение могло б позволить связываться с друзьями, выставлять фото с локаций и находить единомышленников.</p>
+                </div>
+            </div>
+            <div class="about_works_video">
+                <video id="video_works_mobile" autoplay muted loop>
+                    <source src="../images/about_works/arctic.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+
+        </main>
+        <footer>
+            <div class="footer_block">
+                <div class="footer">
+                    <div class="footer_img"><a href="./index.html"><img src="../images/logo_nastia_design.png"></a>
+                    </div>
+                    <div class="footer_menu">
+                        <a href="../all_works.html">Мои работы</a>
+                        <a href="../about_me.html">Обо мне</a>
+                        <a href="../contacts.html">Связаться</a>
+                    </div>
+                    <div class="footer_social">
+                        <a href="https://t.me/nastu_shk0"><img src="../images/telegram.png"></a>
+                        <a href="mailto:Ne4eporenko.an@yandex.ru"><img src="../images/email.png"></a>
+                        <a href="https://vk.com/id743987802"><img src="../images/vk.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="../js/timer.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+    <script>
+        $('.scrin_about_works').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+
+            ]
+        });
+    </script>
+
+
+
+
+</body>
